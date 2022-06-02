@@ -19,14 +19,17 @@
       src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"
     ></script>
     <script type="text/javascript">
-      const provider = await detectEthereumProvider()
+      async function main() {
+        const provider = await detectEthereumProvider();
 
-      if (provider) {
-        // handle provider
-      } else {
-        // handle no provider
-        console.log("error")
+        if (provider) {
+          // handle provider
+        } else {
+          // handle no provider
+          console.log("error");
+        }
       }
+      main();
     </script>
   </body>
   <script type="module" src="index.js"></script>
