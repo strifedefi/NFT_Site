@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NFT Website</title>
@@ -13,17 +15,9 @@
     <main>
       <h1>Welcome to My Website</h1>
     </main>
-    <!-- <button class="enableEthereumButton">Enable Ethereum</button> -->
-    <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
-    <script type="text/javascript">
-      const provider = await detectEthereumProvider()
-
-      if (provider) {
-        // handle provider
-      } else {
-        // handle no provider
-      }
-    </script>
+    <button class="enableEthereumButton" onclick="Connect()">
+      Enable Ethereum
+    </button>
   </body>
   <script type="module" src="index.js"></script>
 </html>
