@@ -14,7 +14,7 @@
     <main>
       <h1>Welcome to My Website</h1>
     </main>
-    <button class="enableEthereumButton">Enable Ethereum</button>
+    <!-- <button class="enableEthereumButton">Enable Ethereum</button> -->
     <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
     <script type="text/javascript">
       const provider = await detectEthereumProvider()
@@ -23,6 +23,7 @@
         // handle provider
       } else {
         // handle no provider
+        console.log("error")
       }
     </script>
   </body>
