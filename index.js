@@ -1,4 +1,4 @@
-import detectEthereumProvider from "@metamask/detect-provider";
+import detectEthereumProvider from "./@metamask/detect-provider";
 
 const provider = await detectEthereumProvider();
 
