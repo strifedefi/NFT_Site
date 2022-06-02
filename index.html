@@ -14,22 +14,15 @@
       <h1>Welcome to My Website</h1>
     </main>
     <!-- <button class="enableEthereumButton">Enable Ethereum</button> -->
-    <script
-      type="module "
-      src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"
-    ></script>
+    <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
     <script type="text/javascript">
-      async function main() {
-        const provider = await detectEthereumProvider();
+      const provider = await detectEthereumProvider()
 
-        if (provider) {
-          // handle provider
-        } else {
-          // handle no provider
-          console.log("error");
-        }
+      if (provider) {
+        // handle provider
+      } else {
+        // handle no provider
       }
-      main();
     </script>
   </body>
   <script type="module" src="index.js"></script>
